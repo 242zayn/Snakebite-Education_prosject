@@ -565,6 +565,58 @@ body {
   margin-block: 30px 10px;
 }
 
+/* Slicer start here */
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 70px 55px;
+}
+
+.slider-wrapper .card-item {
+  width: 350px;
+  height: 350px;
+  background-image: url("../images/shrotimg1\ \(1\).jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.slider-wrapper .item1 {
+  background-image: url("../images/shrotimg1\ \(1\).jpeg");
+}
+.slider-wrapper .item2 {
+  background-image: url("../images/shrotimg1\ \(2\).jpeg");
+}
+.slider-wrapper .item3 {
+  background-image: url("../images/shrotimg1\ \(3\).jpeg");
+}
+.slider-wrapper .item4 {
+  background-image: url("../images/shrotimg1\ \(4\).jpeg");
+}
+.slider-wrapper .item5 {
+  background-image: url("../images/shrotimg1\ \(1\).jpeg");
+}
+.slider-wrapper .item6 {
+  background-image: url("../images/shrotimg1\ \(2\).jpeg");
+}
+
+.slider-wrapper .swiper-button-prev {
+  color: var(--onyx);
+  margin-top: -50px;
+}
+.slider-wrapper .swiper-button-next {
+  color: var(--onyx);
+  margin-top: -50px;
+}
+.slider-wrapper .swiper-pagination-bullet {
+  background: var(--msu-green);
+  height: 15px;
+  width: 15px;
+}
+
+/* Slicer start end */
+
 /*-----------------------------------*\
   #MAP
 \*-----------------------------------*/
