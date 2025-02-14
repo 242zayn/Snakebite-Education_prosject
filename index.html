@@ -3,35 +3,904 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>India Snakebite Education and Mitigation</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="your-logo.png" alt="GSI Logo">
-            <span>GLOBAL SNAKEBITE INITIATIVE</span>
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                Futras<span class="span">.</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#course" class="navbar-link" data-nav-link>All Course</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#" class="btn btn-primary">Sign Up</a>
+
+            <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
         </div>
-        <ul class="nav-links">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">GET INVOLVED</a></li>
-            <li><a href="#">MEDIA</a></li>
-            <li><a href="#" class="donate-btn">DONATE</a></li>
-        </ul>
-        <div class="menu-toggle">&#9776;</div>
-    </nav>
+    </header>
 
-    <script>
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
 
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
-    </script>
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero" aria-label="hero" id="home" data-section
+                style="background-image: url('./assets/images/heroimg.jpeg')">
+                <div class="container">
+
+                    <p class="hero-subtitle">Fitness & Nutrition</p>
+
+                    <h1 class="h1 hero-title">This life style for your fitness, not only diet.</h1>
+
+                    <p class="hero-text">
+                        It has survived not only five centuries but also
+                    </p>
+
+                    <a href="#" class="btn btn-secondary">Start Course</a>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+            <section class="section service" aria-label="service" data-section>
+                <div class="container">
+                    <h2 class="h2 section-title">THE PROBLEM IN INDIA</h2>
+
+                    <p class="section-text">
+                        India has the misfortune of being labeled the “Snakebite Capital of the World,” and GSI’s goal,
+                        along with our dedicated ground partners, is to remove that distinction community by community.
+                    </p>
+                </div>
+                <div class="container grid-container">
+                    <div class="grid-item">
+                        <img src="./assets/images/shrotimg1 (1).jpeg" alt="Fitness Training">
+                        <div class="overlay">
+                            <h3 class="h2 section-title">PERSONALIZED FITNESS TRAINING</h3>
+                            <p class="p section-text">Get customized workout plans and one-on-one guidance from our
+                                expert
+                                trainers. We'll help
+                                you achieve your fitness goals through targeted exercises and continuous support.</p>
+                            <a href="#" class="btn btn-secondary">Meet Instructor</a>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/shrotimg1 (2).jpeg" alt=" Nutrition Guidance">
+                        <div class="overlay">
+                            <h2 class="h2 section-title">NUTRITION COUNSELING</h2>
+                            <p class="section-text">
+                                Transform your diet with expert nutrition guidance. Our certified nutritionists will
+                                create
+                                personalized meal plans that complement your fitness routine and help you maintain a
+                                healthy lifestyle.
+                            </p>
+                            <a href="#" class="btn btn-secondary">Meet Instructor</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" aria-label="about" id="about" data-section>
+                <div class="container">
+
+                    <div class="about-banner img-holder" style="--width: 470; --height: 580;">
+                        <img src="./assets/images/shrotimg1 (1).jpeg" width="470" height="580" loading="lazy"
+                            alt="about banner" class="img-cover">
+
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">Our Mission</p>
+
+                        <h2 class="h2 section-title">Saving Lives Through Education and Prevention</h2>
+
+                        <p class="section-text">
+                            Global Snakebite Initiative (GSI) is dedicated to reducing snakebite incidents and
+                            fatalities in India through comprehensive education and prevention programs. We work
+                            directly with communities to provide life-saving knowledge and resources.
+                        </p>
+
+                        <h3 class="about-h3">Our Impact</h3>
+
+                        <p class="section-text">
+                            Through our initiatives, we've reached thousands of vulnerable communities across India,
+                            establishing early warning systems, training local healthcare workers, and implementing
+                            preventive measures that have demonstrably reduced snakebite incidents.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Map section -->
+            <section class="section map" aria-label="map" data-section>
+                <div class="container">
+
+                    <div class="map-content">
+                        <p class="section-subtitle">Our Location</p>
+
+                        <h2 class="h2 section-title">Find Us Here</h2>
+
+                        <p class="section-text">
+                            Our headquarters is strategically located to serve communities across India. Visit us to
+                            learn more about our snake safety programs and initiatives.
+                        </p>
+
+                        <h3 class="map-h3">Contact Details</h3>
+
+                        <p class="section-text">
+                            123 Snake Safety Street<br>
+                            New Delhi, India 110001<br>
+                            Phone: +91 XXX XXX XXXX<br>
+                            Email: info@snakesafety.org
+                        </p>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+
+                    <div class="map-right-img">
+
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- Slider Section start here -->
+
+            <section class="section logoSlider" aria-label="about" id="about" data-section>
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="itemLeft item1"></div>
+                        <div class="itemLeft item2"></div>
+                        <div class="itemLeft item3"></div>
+                        <div class="itemLeft item4"></div>
+                        <div class="itemLeft item5"></div>
+                        <div class="itemLeft item6"></div>
+                        <div class="itemLeft item7"></div>
+                        <div class="itemLeft item8"></div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="itemRight item1"></div>
+                        <div class="itemRight item2"></div>
+                        <div class="itemRight item3"></div>
+                        <div class="itemRight item4"></div>
+                        <div class="itemRight item5"></div>
+                        <div class="itemRight item6"></div>
+                        <div class="itemRight item7"></div>
+                        <div class="itemRight item8"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- 
+        - #COURSE
+      -->
+
+
+            <section class="section course" aria-label="course" id="course" data-section>
+                <div class="container">
+
+                    <div class="title-wrapper">
+                        <p class="section-subtitle">Our Programs</p>
+
+                        <h2 class="h2 section-title">Snake Safety & Prevention Programs</h2>
+                    </div>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (1).jpeg" width="350" height="300"
+                                        loading="lazy" alt="Community Education Programs" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Sharma</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Community Education Programs</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT2H">2 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">6 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (2).jpeg" width="350" height="300"
+                                        loading="lazy" alt="Snake Identification Training" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Patel</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Snake Identification Training</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT3H">3 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">4 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (3).jpeg" width="350" height="300"
+                                        loading="lazy" alt="First Aid Response Training" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Kumar</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">First Aid Response Training</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT4H">4 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">8 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (4).jpeg" width="350" height="300"
+                                        loading="lazy" alt="Prevention & Safety Measures" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Singh</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Prevention & Safety Measures</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT2H30M">2.5 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">5 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (4).jpeg" width="350" height="300"
+                                        loading="lazy" alt="Healthcare Worker Training" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Reddy</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Healthcare Worker Training</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT5H">5 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">10 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-card">
+
+                                <figure class="card-banner img-holder" style="--width: 350; --height: 300;">
+                                    <img src="./assets/images/shrotimg1 (3).jpeg" width="350" height="300"
+                                        loading="lazy" alt="Community Outreach Program" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <data class="card-price" value="Free">Free</data>
+
+                                    <p class="card-author">
+                                        <a href="#" class="card-link">
+                                            By: <span class="span">Dr. Gupta</span>
+                                        </a>
+                                    </p>
+
+                                    <h3 class="h3">
+                                        <a href="#" class="card-title">Community Outreach Program</a>
+                                    </h3>
+
+                                    <ul class="card-meta-list">
+
+                                        <li class="card-meta-item">
+                                            <time datetime="PT3H">3 hours</time>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <p class="card-meta-text">6 Sessions</p>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #BLOG
+      -->
+
+            <section class="section blog" aria-label="blog" id="blog" data-section>
+                <div class="container">
+
+                    <div class="title-wrapper">
+                        <p class="section-subtitle">Latest Updates</p>
+
+                        <h2 class="h2 section-title">Snake Safety News & Resources</h2>
+                    </div>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <div class="blog-card">
+
+                                <div class="wrapper">
+
+                                    <time class="publish-date" datetime="2024-02-15">
+                                        <span class="span">15</span> Feb
+                                    </time>
+
+                                    <div>
+
+                                        <div class="card-author">
+                                            <a href="#" class="card-link">
+                                                By: <span class="span">Dr. Rajesh Kumar</span>
+                                            </a>
+                                        </div>
+
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <p class="item-text">156 Shares</p>
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <p class="item-text">42 Comments</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">New Snake Identification Guide Released for Rural
+                                        Communities</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    A comprehensive guide helping communities identify common venomous snakes in their
+                                    area and understand appropriate safety measures.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <div class="wrapper">
+
+                                    <time class="publish-date" datetime="2024-02-10">
+                                        <span class="span">10</span> Feb
+                                    </time>
+
+                                    <div>
+
+                                        <div class="card-author">
+                                            <a href="#" class="card-link">
+                                                By: <span class="span">Dr. Priya Singh</span>
+                                            </a>
+                                        </div>
+
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <p class="item-text">124 Shares</p>
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <p class="item-text">35 Comments</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Success Story: Village Reduces Snakebite Incidents by
+                                        70%</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    How one rural community implemented our prevention program and dramatically reduced
+                                    snakebite cases through education and preparation.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+
+                                <div class="wrapper">
+
+                                    <time class="publish-date" datetime="2024-02-05">
+                                        <span class="span">05</span> Feb
+                                    </time>
+
+                                    <div>
+
+                                        <div class="card-author">
+                                            <a href="#" class="card-link">
+                                                By: <span class="span">Dr. Amit Patel</span>
+                                            </a>
+                                        </div>
+
+                                        <ul class="card-meta-list">
+                                            <li class="card-meta-item">
+                                                <p class="item-text">98 Shares</p>
+                                            </li>
+
+                                            <li class="card-meta-item">
+                                                <p class="item-text">27 Comments</p>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+
+                                </div>
+
+                                <h3 class="h3">
+                                    <a href="#" class="card-title">Essential First Aid Tips for Snake Bite
+                                        Prevention</a>
+                                </h3>
+
+                                <p class="card-text">
+                                    Learn the crucial dos and don'ts of snake bite first aid, including proper emergency
+                                    response and treatment protocols.
+                                </p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #APP
+      -->
+
+            <section class="section app" aria-label="app" data-section>
+                <div class="container">
+
+                    <div class="app-card">
+
+                        <p class="section-subtitle">Mobile App Coming Soon</p>
+
+                        <h2 class="h2 section-title">
+                            Download our snake safety app.<br>
+                            Access life-saving information anytime.
+                        </h2>
+
+                        <div class="wrapper">
+                            <a href="#" class="app-link" aria-label="play store">
+                                <img src="./assets/images/play-store.jpg" width="134" height="38" loading="lazy"
+                                    alt="Play Store" class="img">
+                            </a>
+
+                            <a href="#" class="app-link" aria-label="app store">
+                                <img src="./assets/images/app-store.jpg" width="132" height="38" loading="lazy"
+                                    alt="App Store" class="img">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+
+        <div class="footer-top section" data-section>
+            <div class="container">
+
+                <div class="footer-list">
+
+                    <p class="footer-list-title">Subscribe Newsletter</p>
+
+                    <p class="footer-list-text">
+                        Stay updated with the latest snake safety tips, research, and community programs by subscribing
+                        to our newsletter.
+                    </p>
+
+                    <form action="" class="footer-form">
+                        <input type="email" name="email_address" aria-label="email" placeholder="Enter email" required
+                            class="email-field">
+
+                        <button type="submit" class="btn btn-secondary">Subscribe Now</button>
+                    </form>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Our Programs</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Community Education</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Snake Safety Training</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">First Aid Workshops</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Prevention Programs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Rural Outreach</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Healthcare Training</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Quick Links</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Emergency Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms & Conditions</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Support Center</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Resources</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Snake Database</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Hours</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Mon-Fri: 24/7 Emergency Support</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Saturday: 9 AM – 6 PM</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Sunday: 9 AM - 4 PM</a>
+                    </li>
+
+                    <li>
+                        <p class="footer-list-title address-title">Head Office</p>
+                    </li>
+
+                    <li>
+                        <address class="address">
+                            123 Snake Safety Street<br>
+                            New Delhi, India 110001
+                        </address>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 Global Snakebite Initiative India. Made with
+                    <ion-icon name="heart" aria-hidden="true"></ion-icon> for
+                    <a href="#" class="copyright-link">Safer Communities</a>
+                </p>
+
+                <ul class="footer-bottom-list">
+
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    </li>
+
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Sitemap</a>
+                    </li>
+
+                    <li class="footer-bottom-item">
+                        <a href="#" class="footer-bottom-link">Emergency</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
