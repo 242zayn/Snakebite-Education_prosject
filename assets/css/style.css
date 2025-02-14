@@ -1547,7 +1547,7 @@ body {
      * spacing
      */
 
-    --section-padding: 140px;
+    --section-padding: 80px;
   }
 
   /**
@@ -1614,6 +1614,9 @@ body {
 
   .map-h3 {
     --fs-2: 3rem;
+  }
+  .map-content a{
+    margin: 20px 0;
   }
 
   /**
